@@ -11,7 +11,7 @@
 
 以下是有效二叉搜索树的示例：
 
-![二叉搜索树]()
+![二叉搜索树](https://github.com/heron-newland/BinarySearchTree/blob/master/assets/bst1.png)
 
 ==注意每个左子节点小于其父节点，每个右子节点大于其父节点。这是二叉搜索树的关键特性。==
 
@@ -30,7 +30,7 @@
 
 这是插入新值后的树9：
 
-![]()
+![](https://github.com/heron-newland/BinarySearchTree/blob/master/assets/bst2.png)
 
 只有一个可能的位置可以在树中插入新元素。找到这个地方通常很快。它需要O（h）时间，其中h是树的高度。
 
@@ -50,7 +50,7 @@
 
 以下是搜索值5的示例：
 
-![]()
+![](https://github.com/heron-newland/BinarySearchTree/blob/master/assets/bst3.png)
 
 使用树的结构搜索很快。它在O（h）时间内运行。如果你有一个拥有一百万个节点的均衡树，那么在这棵树中找到任何东西只需要大约20步。（这个想法非常类似于数组中的二进制搜索。）
 
@@ -68,17 +68,17 @@
 
 如果按顺序遍历二叉搜索树，它会查看所有节点，就好像它们从低到高排序一样。对于示例树，它将打印1, 2, 5, 7, 9, 10：
 
-![穿越树](4)
+![穿越树](https://github.com/heron-newland/BinarySearchTree/blob/master/assets/bst4.png)
 
 #### 删除节点
 
 删除节点很容易。删除节点后，我们将节点替换为==左侧最大子节点或右侧最小子节==点。这样，树在移除后仍然会被排序。在以下示例中，将删除10并替换为9（图2）或11（图3）。
 
-![删除包含两个子节点的节点](5)
+![删除包含两个子节点的节点](https://github.com/heron-newland/BinarySearchTree/blob/master/assets/bst5.png)
 
 请注意，==当节点至少有一个子节点时，需要进行替换。如果它没有子节点，您只需将其与其父节点断开连接==：
 
-![删除叶节点](6)
+![删除叶节点](https://github.com/heron-newland/BinarySearchTree/blob/master/assets/bst6.png)
 
 ### 代码（解决方案1）
 
@@ -235,7 +235,7 @@
 
 根节点位于中间。有了一些想象力，您应该看到这确实对应于以下树：
 
-![](7)
+![](https://github.com/heron-newland/BinarySearchTree/blob/master/assets/bst7.png)
 
 您可能想知道插入重复项时会发生什么？我们总是在正确的分支中插入它们。试试看！
 
@@ -489,7 +489,7 @@
 
 二叉搜索树总是“排序”，但这并不意味着连续的数字实际上在树中彼此相邻。
 
-![](8)
+![](https://github.com/heron-newland/BinarySearchTree/blob/master/assets/bst8.png)
 
 请注意，7只需查看其左子节点，就无法找到之前的数字。左边的孩子2不是5。同样对于之后的数字7。
 
